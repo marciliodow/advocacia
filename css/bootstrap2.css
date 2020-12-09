@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;   
+
+}
+body{
+   background:url( "../img/oficna.jpg");
+   background-size: 100%;
+    font-family: arial;
+
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 40px;
+
+}
+input[type="checkbox"]
+{
+    display: none;
+}
+nav{
+    background-color: rgba(16,16,16,.5);
+    width: 350px;
+    height: 100%;
+    left: -350px;
+    position: absolute;
+}   
+nav li { 
+    list-style: none; background: #A4A4A4; width: 250px; border-bottom: 1px solid #666; 
+}
+nav li a {
+    display: block; padding: 8px; border-left: 4px solid #444; text-decoration: none; box-shadow: 2px 2px 5px #ccc; color: #555; 
+}
+nav li a:hover {
+    border-left: 4px solid #069; background: #f8f8f8;
+}
+nav li ul {
+    display: none; 
+}
+nav li:hover ul {
+    display: block;
+}
+nav li:hover ul li {
+    background: #333;
+}
+nav li:hover ul li a {
+    color: #ccc;
+}
+nav li:hover ul li a:hover { 
+    background: #222; border-left: 4px solid #900;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+}
+
+ul{
+
+    top:70px;
+    position: absolute;
+    width: 100%;
+}
+a {
+
+    display: block;
+    padding: 20px 5px;
+    color: white;
+}
+
+a:hover{
+    background-color: rgb(176,224,230);
+    color: black;
+}
+
+label{
+
+    padding: 15px;
+    position: absolute;    
+    z-index: 1;
+}
+
+#ul3{
+   
+        left: 1400px;
+        top: 1000px;
+}
